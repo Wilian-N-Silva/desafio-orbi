@@ -1,0 +1,36 @@
+.stories {
+  display: flex;
+  overflow: auto;
+  margin: 24px 0;
+}
+
+.stories ul {
+  display: flex;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.stories__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories__item img {
+  padding: 5px;
+  border: 2px solid var(--pink);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-bottom: 5px;
+}
+
+.stories__item span {
+  font-size: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .stories {
+    display: none;
+  }
+}
